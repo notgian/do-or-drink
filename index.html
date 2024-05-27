@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink OR Do: Drinking Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gameModal" id="gameModal">
+        <div class="gameCard cardColor-white">
+            <span class="cardPrompt">
+                Click on the next button to start.
+            </span>
+        </div>
+        <span>
+            <span class="gameNextButton" onclick="nextQuestion()">></span>
+        </span>
+    </div>
+    <div class="container">
+        <span class="pageHeader">
+            <h1 id="pageTitle" class="row">Do <br /> — or — <br /> Drink</h1>
+            <p class="pageDescription row">Drinking game. Custom qustions and application made by Gian (so you know that it will be pure suffering 😈)</p>
+        </span>
+        <hr />
+        
+        <div class="modeSelect">
+            <div class="modeSelectionItem">
+                <button class="modeButton" onclick="startGame('1')">CLASSIC</button>
+                <span class="modeDescription">Normal odds for white and black cards</span>
+            </div>
+            
+            <div class="modeSelectionItem">
+                <button class="modeButton" onclick="startGame('2')">PLAYING IT SAFE</button>
+                <span class="modeDescription">Don't feel like going too crazy? Play is safe, but keep that element of danger.</span>
+
+            </div>
+
+            <div class="modeSelectionItem">
+                <button class="modeButton" onclick="startGame('3')">CLEAN</button>
+                <span class="modeDescription">Pussy.</span>
+            </div>
+
+            <div class="modeSelectionItem">
+                <button class="modeButton" onclick="startGame('4')">DANGEROUS</button>
+                <span class="modeDescription">For those feeling a little more dangerous than usual.</span>
+            </div>
+
+            <div class="modeSelectionItem">
+                <button class="modeButton" onclick="startGame('5')">PURE CHAOS</button>
+                <span class="modeDescription">Open up the gates of hell.</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html> 
